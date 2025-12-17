@@ -324,7 +324,35 @@ footer {
     font-size: 14px;
 }
 ```
+urls.py 
+```
+from django.urls import path
+from willywonka import views
 
+urlpatterns = [
+    path('', views.home, name='home'),
+    path('menu/', views.menu, name='menu'),
+    path('contact/', views.contact, name='contact'),
+    path('administration/', views.admin_page, name='administration'),
+]
+
+```
+views.py
+```
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'home.html')
+
+def menu(request):
+    return render(request, 'menu.html')
+
+def admin_page(request):
+    return render(request, 'administration.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+```
 # OUTPUT:
 ![alt text](outputt1.png)
 ![alt text](outputt2.png)
