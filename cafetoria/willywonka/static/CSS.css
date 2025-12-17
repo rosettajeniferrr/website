@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'WonkaFont';
+    src: url('delight.ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #500000;   
+    font-family: 'Segoe UI';
+    color: #000;
+}
+.home-img {
+    display: block;          
+    margin: 30px auto 0;     
+}
+nav {
+    background-color: #f6edbe;  
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 100px;
+    align-items: flex-start;
+    position: relative;
+}
+nav h1 {
+    font-size: 48px;
+    font-family: 'WonkaFont';
+    font-weight:900;
+    letter-spacing: 3px;
+    color: rgb(162, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+
+}
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #000000;          
+    font-size: 16px;
+    font-weight: 500;
+}
+nav div {
+    display: flex;
+    gap: 10px 10px;
+    position: absolute;
+    align-items: center;
+    bottom: 20px;
+    right: 30px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    padding: 20px 20px;
+}
+h2{
+    color: #fff2d2;
+    font-family: Harrington;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Bookman Old Style;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    gap: 20px 25px;
+    justify-content: center;
+   
+}
+.menu-item {
+    background-color: #fffeaa;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    height: 215px;
+}
+
+.menu-item img {
+    margin-bottom: 4px;
+    width: 180px;
+    height: 150px;
+}
+.menu-item h5 {
+    font-size: 16px;
+    font-family:Bookman Old Style;
+    margin: 4px 0 2px;
+    justify-content: center;
+}
+.menu-item p {
+    margin-top: 2px;
+    font-weight: bold;
+    color: #000;
+}
+.admin-grid {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    gap: 20px 25px;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.admin-grid  div{
+    background-color: #fffeaa;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    height: 230px;
+}
+.admin-grid img {
+    width: 200px;
+    height: 180px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+.admin-grid h5 {
+    font-size: 16px;
+    margin: 4px 0 2px;
+}
+
+.admin-grid p {
+    margin-top: 2px;
+    font-weight: bold;
+    color: #000;
+}
+.home-footer {
+    margin-top: 5px;  
+    padding: 40px;
+    text-align: center;
+    color: #000000;   
+    font-size: 14px;
+}
+footer {
+    margin-top: 25px;
+    padding: 80px;
+    text-align: center;
+    color: #000000;   
+    font-size: 14px;
+}
+.contact-footer {
+    margin-top: 200px;  
+    padding: 80px;
+    text-align: center;
+    color: #000000;   
+    font-size: 14px;
+}

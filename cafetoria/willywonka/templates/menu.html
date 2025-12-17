@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+    <title>Menu | Royal Taste</title>
+    <link rel="stylesheet" href="{% static 'CSS.css' %}">
+</head>
+<body>
+    <nav>
+        <h1>Wonka Bites</h1>
+        <div>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'menu' %}">Menu</a>
+        <a href="{% url 'administration' %}">Administration</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+    <h2>Our Creations</h2>
+</div>
+<div class="menu-grid">
+    <div class="menu-item"><img src="{% static 'fountain.png' %}"><h5>Strawberry chocolate fountains</h5><p>$36</p></div>
+    <div class="menu-item"><img src="{% static 'gingerbread.jpg' %}"><h5>Gingerbread Cookies</h5><p>$7</p></div>
+    <div class="menu-item"><img src="{% static 'candy.jpg' %}"><h5>Candy cane Forest Platter</h5><p>$40</p></div>
+    <div class="menu-item"><img src="{% static 'mouse.jpg' %}"><h5>Choco River Mousse</h5><p>$60</p></div>
+    <div class="menu-item"><img src="{% static 'pizookie.jpg' %}"><h5>Pizookie with vanilla cream</h5><p>$9</p></div>
+    <div class="menu-item"><img src="{% static 'triffile.jpg' %}"><h5>Berry Cheesecake Trifle</h5><p>$56</p></div>
+    <div class="menu-item"><img src="{% static 'cupcake.png' %}"><h5>Everlasting Gobstopper Cupcakes</h5><p>$6</p></div>
+    <div class="menu-item"><img src="{% static 'cake.jpg' %}"><h5>Chocolate Peanut Butter Cake</h5><p>$32</p></div>
+    <div class="menu-item"><img src="{% static 'lava.jpg' %}"><h5>Warm Melting Cups</h5><p>$45</p></div>
+    <div class="menu-item"><img src="{% static 'tart.jpg' %}"><h5>Mini cherry tarts</h5><p>$15</p></div>     
+</div>
+
+<footer>
+    <p>© willy wonka's desserts</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+<head>
+    <title>Administration|Willy Wonka Desserts </title>
+    <link rel="stylesheet" href="{% static 'CSS.css' %}">
+</head>
+<body>
+    <nav>
+        <h1>Wonka Bites</h1>
+        <div>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'menu' %}">Menu</a>
+        <a href="{% url 'administration' %}">Administration</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        </div>
+    </nav>
+<div class="container">
+    <h2>Administration</h2>
+    <div class="admin-grid">
+    <div class="admin-1"><img src="{% static 'willy.jpg' %}"><h5>Head Chef</h5><p>Willy Wonka</p></div>
+    <div class="admin-2"><img src="{% static 'oompa.jpg' %}"><h5>Pastry Chef</h5><p>Oompa Loompas</p></div>
+    <div class="admin-3"><img src="{% static 'charlie.jpg' %}"><h5>Operation Manager</h5><p>Charlie Bucket </p></div>
+    <div class="admin-4"><img src="{% static 'veruca.jpg' %}"><h5>Quality Control</h5><p>Veruca Salt</p></div>
+    <div class="admin-5"><img src="{% static 'grandpa.jpg' %}"><h5>HR Lead</h5><p>Grandpa Joe</p></div>
+</div>
+<p>Our management team ensures quality service, cleanliness,
+        and customer satisfaction at all times.
+    </p>
+</div>
+
+<footer>
+    <p>© willy wonka's desserts</p>
+</footer>
+</body>
+</html>
